@@ -1,5 +1,7 @@
 # ClientAgentJS
 
+![ClientAgentJS](https://repository-images.githubusercontent.com/1213823045/78ba94f8-639a-48d6-97f4-0cdba491a37b)
+
 ClientAgentJS is a plain JavaScript browser library for adding AI agent capabilities to web applications without building your own backend.
 
 ClientAgentJS uses a **Zero-Backend Architecture**. Unlike traditional AI applications that proxy requests through a server, this library runs entirely in the browser. It follows a **Direct Client-to-Provider** model where the user's credentials never leave their device and requests go directly from the browser to the AI provider.
