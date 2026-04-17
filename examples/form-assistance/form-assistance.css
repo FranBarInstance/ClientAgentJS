@@ -1,0 +1,232 @@
+:root {
+  --bg: #f6f3ec;
+  --surface: #fffdf8;
+  --ink: #1c1a16;
+  --muted: #6b655d;
+  --accent: #bf5b2c;
+  --accent-ink: #fff8f4;
+  --border: #e8dccd;
+  --field: #fffaf3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form-assistance-page {
+  margin: 0;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(238, 204, 180, 0.45), transparent 22%),
+    linear-gradient(180deg, #fffaf5 0%, var(--bg) 100%);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+}
+
+.form-assistance-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+.form-assistance-layout {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1.3fr 0.8fr;
+}
+
+@media (max-width: 900px) {
+  .form-assistance-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-assistance-page {
+    padding: 12px;
+  }
+
+  .form-assistance-container {
+    gap: 12px;
+  }
+
+  .form-assistance-hero {
+    padding: 16px;
+  }
+
+  .form-assistance-panel {
+    padding: 12px;
+  }
+
+  .form-assistance-layout {
+    gap: 12px;
+  }
+
+  .form-assistance-form {
+    gap: 12px;
+  }
+
+  .form-assistance-field-card {
+    padding: 12px;
+  }
+
+  .form-assistance-field-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .form-assistance-field-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .form-assistance-toolbar {
+    gap: 6px;
+  }
+
+  .form-assistance-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .form-assistance-status,
+  .form-assistance-preview {
+    padding: 12px;
+    min-height: 100px;
+  }
+
+  .form-assistance-section-title {
+    margin-top: 12px;
+    margin-bottom: 4px;
+  }
+}
+
+.form-assistance-hero,
+.form-assistance-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 20px 48px rgba(52, 35, 18, 0.08);
+}
+
+.form-assistance-hero {
+  padding: 24px;
+}
+
+.form-assistance-panel {
+  padding: 20px;
+}
+
+.form-assistance-hero h1,
+.form-assistance-panel h2,
+.form-assistance-panel h3 {
+  margin-top: 0;
+}
+
+.form-assistance-hero p,
+.form-assistance-panel p,
+.form-assistance-panel li {
+  color: var(--muted);
+}
+
+.form-assistance-form {
+  display: grid;
+  gap: 16px;
+}
+
+.form-assistance-label {
+  display: block;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.form-assistance-input,
+.form-assistance-textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 11px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--field);
+  color: var(--ink);
+  font: inherit;
+}
+
+.form-assistance-input:focus,
+.form-assistance-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-assistance-textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.form-assistance-field-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  background: #fffefb;
+}
+
+.form-assistance-field-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.form-assistance-field-header h3 {
+  margin: 0;
+}
+
+.form-assistance-field-actions,
+.form-assistance-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.form-assistance-btn {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.form-assistance-btn:hover {
+  background: var(--field);
+}
+
+.form-assistance-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form-assistance-status,
+.form-assistance-preview {
+  white-space: pre-wrap;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fffaf4;
+  padding: 14px;
+  min-height: 140px;
+  font-family: inherit;
+}
+
+.form-assistance-mini {
+  font-size: 13px;
+}
+
+.form-assistance-section-title {
+  margin-top: 16px;
+  margin-bottom: 6px;
+}

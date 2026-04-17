@@ -1,0 +1,31 @@
+{
+  "name": "clientagentjs",
+  "version": "0.1.0",
+  "description": "Browser-first Zero-Backend AI agent library for web applications.",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./dist/clientagentjs.esm.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "docs"
+  ],
+  "keywords": [
+    "ai",
+    "agent",
+    "browser",
+    "zero-backend",
+    "mcp",
+    "client-side-ai"
+  ],
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
+  }
+}

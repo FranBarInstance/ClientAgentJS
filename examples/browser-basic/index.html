@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClientAgentJS - Chat Explorer</title>
+    <link rel="stylesheet" href="./browser-basic.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body class="browser-basic-page">
+    <div class="browser-basic-container">
+      <header class="browser-basic-hero">
+        <div class="hero-content">
+          <h1>ClientAgentJS Chat Explorer</h1>
+          <p>
+            A full-featured example of the <code class="browser-basic-code">ClientAgentJS</code> API.
+            Configure your profiles, start a session, and interact with the agent.
+          </p>
+        </div>
+        <div class="browser-basic-toolbar main-actions">
+          <button class="browser-basic-toolbar-btn primary" id="btn-open-config">
+            <span class="icon">⚙️</span> Model
+          </button>
+          <button class="browser-basic-toolbar-btn" id="btn-open-mcp">
+            <span class="icon">🔌</span> MCP
+          </button>
+          <button class="browser-basic-toolbar-btn" id="btn-quick-ollama" title="Create a local Ollama profile (requires Ollama running)">
+            Quick Ollama
+          </button>
+        </div>
+      </header>
+
+      <main class="chat-layout">
+        <aside class="chat-sidebar">
+          <section class="sidebar-section">
+            <h3 class="browser-basic-section-title">Session</h3>
+            <div class="sidebar-actions">
+              <button class="browser-basic-toolbar-btn" id="btn-new-chat">New Chat Session</button>
+              <button class="browser-basic-toolbar-btn" id="btn-check">Refresh Status</button>
+            </div>
+            <div id="agent-status-badge" class="status-badge">Checking...</div>
+            <div id="agents-md-badge" class="status-badge subtle">AGENTS.md inactive</div>
+          </section>
+
+          <section class="sidebar-section">
+            <h3 class="browser-basic-section-title">Storage & Portability</h3>
+            <div class="storage-toggle">
+              <label>
+                <input type="radio" name="storage-type" value="session" checked> Session
+              </label>
+              <label>
+                <input type="radio" name="storage-type" value="local"> Local
+              </label>
+            </div>
+            <div class="sidebar-actions">
+              <button class="browser-basic-toolbar-btn small" id="btn-export">Export Config</button>
+              <button class="browser-basic-toolbar-btn small" id="btn-import">Import Config</button>
+            </div>
+          </section>
+
+          <section class="sidebar-section logs-section">
+            <h3 class="browser-basic-section-title">Event Log</h3>
+            <div id="event-log" class="event-log"></div>
+          </section>
+        </aside>
+
+        <section class="chat-main">
+          <div id="messages" class="messages-container">
+            <div class="message system">
+              Welcome! Please configure a profile to start chatting.
+            </div>
+          </div>
+
+          <div class="chat-input-area">
+            <div class="input-wrapper">
+              <textarea id="prompt" class="browser-basic-textarea" placeholder="Type a message... (Shift+Enter to send)"></textarea>
+
+            </div>
+            <div class="browser-basic-toolbar chat-controls">
+              <button class="browser-basic-toolbar-btn primary" id="btn-send">Send</button>
+              <button class="browser-basic-toolbar-btn danger" id="btn-stop" disabled>Stop</button>
+              <button class="browser-basic-toolbar-btn danger" id="btn-clear">Clear Chat</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

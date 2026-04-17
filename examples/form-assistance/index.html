@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClientAgentJS - Form Assistance</title>
+    <link rel="stylesheet" href="./form-assistance.css" />
+  </head>
+  <body class="form-assistance-page">
+    <div class="form-assistance-container">
+      <section class="form-assistance-hero">
+        <h1>Form Assistance Example</h1>
+        <p>
+          This example shows the main product use case from the specification: adding AI assistance on
+          top of an existing form without redesigning the full application.
+        </p>
+        <div class="form-assistance-toolbar">
+          <button class="form-assistance-btn" id="btn-open-config">Open Profile Panel</button>
+          <button class="form-assistance-btn" id="btn-check">Check agent state</button>
+          <button class="form-assistance-btn" id="btn-demo-profile">Create Ollama Demo Profile</button>
+        </div>
+      </section>
+
+      <div class="form-assistance-layout">
+        <section class="form-assistance-panel">
+          <h2>Content Form</h2>
+          <form class="form-assistance-form" id="content-form">
+            <label class="form-assistance-label">
+              Product name
+              <input class="form-assistance-input" id="product-name" value="Aurora Travel Mug" />
+            </label>
+
+            <label class="form-assistance-label">
+              Audience
+              <input class="form-assistance-input" id="audience" value="Remote workers who want coffee to stay hot during long mornings" />
+            </label>
+
+            <div class="form-assistance-field-card">
+              <div class="form-assistance-field-header">
+                <div>
+                  <h3>Short bio</h3>
+                  <p class="form-assistance-mini">Useful for author, seller or speaker profiles.</p>
+                </div>
+                <div class="form-assistance-field-actions">
+                  <button class="form-assistance-btn" type="button" data-action="bio">Generate with AI</button>
+                  <button class="form-assistance-btn" type="button" data-action="bio-stream">Stream</button>
+                </div>
+              </div>
+              <textarea class="form-assistance-textarea" id="bio">Founder of a small design studio, coffee obsessive, and frequent train traveler.</textarea>
+            </div>
+
+            <div class="form-assistance-field-card">
+              <div class="form-assistance-field-header">
+                <div>
+                  <h3>Product description</h3>
+                  <p class="form-assistance-mini">Turn existing form data into a polished listing description.</p>
+                </div>
+                <div class="form-assistance-field-actions">
+                  <button class="form-assistance-btn" type="button" data-action="description">Generate with AI</button>
+                  <button class="form-assistance-btn" type="button" data-action="description-stream">Stream</button>
+                </div>
+              </div>
+              <textarea class="form-assistance-textarea" id="description">Double-wall stainless steel mug with leak-resistant lid and matte finish.</textarea>
+            </div>
+
+            <div class="form-assistance-field-card">
+              <div class="form-assistance-field-header">
+                <div>
+                  <h3>Support reply</h3>
+                  <p class="form-assistance-mini">Draft a customer-facing response based on issue details.</p>
+                </div>
+                <div class="form-assistance-field-actions">
+                  <button class="form-assistance-btn" type="button" data-action="support">Generate with AI</button>
+                  <button class="form-assistance-btn" type="button" data-action="support-stream">Stream</button>
+                </div>
+              </div>
+              <textarea class="form-assistance-textarea" id="support">Customer says the lid arrived scratched and asks if we can replace it without returning the mug.</textarea>
+            </div>
+          </form>
+        </section>
+
+        <aside class="form-assistance-panel">
+          <h3 class="form-assistance-section-title">Assistant Output</h3>
+          <div class="form-assistance-status" id="status"></div>
+          <h3 class="form-assistance-section-title">Preview</h3>
+          <div class="form-assistance-preview" id="preview"></div>
+        </aside>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+  </html>

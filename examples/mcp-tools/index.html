@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClientAgentJS - MCP Tools</title>
+    <link rel="stylesheet" href="./mcp-tools.css" />
+  </head>
+  <body class="mcp-tools-page">
+    <div class="mcp-tools-container">
+      <section class="mcp-tools-hero">
+        <h1>MCP Tools Example</h1>
+        <p>
+          This example focuses on MCP integration. It connects ClientAgentJS to the example server in
+          <code class="mcp-tools-code">scripts/mcp_server.py</code>, lets you inspect the remote tools, and shows an
+          <code class="mcp-tools-code">ask()</code> flow where the model can use MCP tools automatically.
+        </p>
+        <ol>
+          <li>Run <code class="mcp-tools-code">npm run build</code>.</li>
+          <li>Start the MCP server from <code class="mcp-tools-code">scripts/mcp_server.py</code>.</li>
+          <li>Create or reuse a profile that points to an OpenAI-compatible provider.</li>
+          <li>Save the MCP server and enable it in the active profile.</li>
+        </ol>
+        <div class="mcp-tools-toolbar">
+          <button class="mcp-tools-btn" id="btn-open-config">Open Profile Panel</button>
+          <button class="mcp-tools-btn" id="btn-open-mcp">Open MCP Panel</button>
+          <button class="mcp-tools-btn" id="btn-create-demo">Create Demo Profile</button>
+        </div>
+      </section>
+
+      <div class="mcp-tools-grid">
+        <section class="mcp-tools-panel">
+          <h2>Server Setup</h2>
+          <label class="mcp-tools-label">
+            MCP server URL
+            <input class="mcp-tools-input" id="server-url" value="http://localhost:8000/mcp" />
+          </label>
+          <div class="mcp-tools-toolbar">
+            <button class="mcp-tools-btn" id="btn-save-server">Save MCP Server</button>
+          </div>
+        </section>
+
+        <section class="mcp-tools-panel">
+          <h2>Agent Setup</h2>
+          <label class="mcp-tools-label">
+            Prompt for model tool use
+            <textarea class="mcp-tools-textarea" id="prompt">Use the MCP tools to calculate the sum of 12, 18 and 30, then tell me the current server time.</textarea>
+          </label>
+          <div class="mcp-tools-toolbar">
+            <button class="mcp-tools-btn primary" id="btn-ask">Run ask() with MCP</button>
+            <button class="mcp-tools-btn" id="btn-check">Check active profile</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="mcp-tools-grid">
+        <section class="mcp-tools-panel">
+          <h2>Direct MCP Calls</h2>
+          <div class="mcp-tools-toolbar">
+            <button class="mcp-tools-btn" id="btn-init">Initialize</button>
+            <button class="mcp-tools-btn" id="btn-list-tools">List tools</button>
+            <button class="mcp-tools-btn" id="btn-call-sum">Call calculate_sum</button>
+            <button class="mcp-tools-btn" id="btn-call-time">Call get_current_time</button>
+          </div>
+        </section>
+
+        <section class="mcp-tools-panel">
+          <h2>Status</h2>
+          <div id="status" class="mcp-tools-status"></div>
+        </section>
+      </div>
+
+      <section class="mcp-tools-panel">
+        <h3 class="mcp-tools-section-title">Output</h3>
+        <div id="output" class="mcp-tools-output"></div>
+      </section>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+  </html>
