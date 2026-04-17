@@ -105,3 +105,7 @@ Responsibilities:
 
 - build distributable ESM bundles from `src/`
 - keep examples pointed at the built runtime rather than internal source files
+
+---
+
+See license: https://github.com/FranBarInstance/ClientAgentJS

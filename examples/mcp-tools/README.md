@@ -48,3 +48,7 @@ Then open:
 4. Run `ask() with MCP`.
 
 If you are not using Ollama, open the profile panel and create an active OpenAI-compatible profile manually, then enable the saved MCP server in that profile.
+
+---
+
+See license: https://github.com/FranBarInstance/ClientAgentJS

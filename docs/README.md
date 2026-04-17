@@ -33,3 +33,7 @@ To test any example locally:
 1. Build the library: `npm run build`
 2. Serve the project root with a static server (e.g., `npx serve` or `python3 -m http.server`)
 3. Open the example path in your browser.
+
+---
+
+See license: https://github.com/FranBarInstance/ClientAgentJS

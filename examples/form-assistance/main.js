@@ -1,3 +1,8 @@
+/**
+ * ClientAgentJS Example - Form Assistance
+ * See license: https://github.com/FranBarInstance/ClientAgentJS
+ */
+
 import { createAgent } from "../../dist/clientagentjs.esm.js"
 
 const statusEl = document.querySelector("#status")

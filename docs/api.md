@@ -200,3 +200,7 @@ Main classes available for customization:
 - `.caj-controls`
 - `.caj-error`
 - `.caj-feedback`
+
+---
+
+See license: https://github.com/FranBarInstance/ClientAgentJS

@@ -4,6 +4,10 @@
   "description": "Browser-first Zero-Backend AI agent library for web applications.",
   "private": true,
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FranBarInstance/ClientAgentJS"
+  },
   "type": "module",
   "exports": {
     ".": "./dist/clientagentjs.esm.js"

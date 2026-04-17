@@ -261,3 +261,7 @@ When adding an MCP server in the configuration panel, verify that the endpoint e
 - **Local-Only**: The agent communicates with a local model (like Ollama or LM Studio) for a 100% private, offline-capable experience.
 
 This architecture makes the project ideal for internal tools, developer-focused products, and any application where data privacy and user control are priorities.
+
+## License
+
+See license: https://github.com/FranBarInstance/ClientAgentJS

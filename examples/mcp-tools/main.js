@@ -1,3 +1,8 @@
+/**
+ * ClientAgentJS Example - MCP Tools
+ * See license: https://github.com/FranBarInstance/ClientAgentJS
+ */
+
 import { createAgent } from "../../dist/clientagentjs.esm.js"
 
 const outputEl = document.querySelector("#output")

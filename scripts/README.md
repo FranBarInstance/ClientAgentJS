@@ -98,3 +98,7 @@ agent.saveProfile("demo", {
 agent.setActiveProfile("demo")
 ```
 > ⚠️ **Production note:** In the local environment it allows traffic to generalized origins `("*")`. In a real production environment, you must restructure the MCP server to limit Origin headers to your own domains (`Access-Control-Allow-Origin: mysite.com`).
+
+---
+
+See license: https://github.com/FranBarInstance/ClientAgentJS

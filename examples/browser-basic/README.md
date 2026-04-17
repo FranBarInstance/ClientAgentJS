@@ -44,3 +44,7 @@ This example is a comprehensive "Chat Explorer" that demonstrates the majority o
 - **Imports**: The example imports directly from `../../dist/clientagentjs.esm.js`.
 - **UI Architecture**: Uses a modular vanilla JavaScript approach with CSS variables for a modern, responsive design.
 - **Dependencies**: Uses `marked.min.js` (via CDN) for Markdown parsing.
+
+---
+
+See license: https://github.com/FranBarInstance/ClientAgentJS

@@ -38,3 +38,7 @@ Then open:
 2. Or click `Open Profile Panel` and create your own active profile.
 3. Use any `Generate with AI` or `Stream` button next to a field.
 4. Review how the generated text goes directly into the matching form control.
+
+---
+
+See license: https://github.com/FranBarInstance/ClientAgentJS

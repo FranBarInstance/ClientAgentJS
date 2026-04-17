@@ -8,6 +8,12 @@ const __dirname = path.dirname(__filename)
 const projectRoot = path.resolve(__dirname, "..")
 const distDir = path.join(projectRoot, "dist")
 
+const LICENSE_BANNER = `/**
+ * ClientAgentJS
+ * Browser-first Zero-Backend AI agent library
+ * See license: https://github.com/FranBarInstance/ClientAgentJS
+ */`
+
 async function build() {
   // 1. Clean dist
   await fs.rm(distDir, { recursive: true, force: true })
@@ -19,6 +25,9 @@ async function build() {
     minify: true,
     sourcemap: true,
     target: ["es2022"],
+    banner: {
+      js: LICENSE_BANNER,
+    },
   }
 
   // 2. Build ESM

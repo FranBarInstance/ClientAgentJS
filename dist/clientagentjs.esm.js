@@ -1,3 +1,8 @@
+/**
+ * ClientAgentJS
+ * Browser-first Zero-Backend AI agent library
+ * See license: https://github.com/FranBarInstance/ClientAgentJS
+ */
 function X(){let e=[];return{getMessages(){return e.map(t=>({...t}))},addMessage(t,n){e.push({role:t,content:n})},clear(){e.length=0}}}function Y(e,t){let n=String(e||"").trim(),r=String(t||"").trim();return n?r?`${r}
 
 [AGENTS.md]

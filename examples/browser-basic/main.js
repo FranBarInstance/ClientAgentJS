@@ -1,3 +1,8 @@
+/**
+ * ClientAgentJS Example - Chat Explorer
+ * See license: https://github.com/FranBarInstance/ClientAgentJS
+ */
+
 import { createAgent } from "../../dist/clientagentjs.esm.js";
 
 const AGENTS_MD_PATH = "./AGENTS.md";
