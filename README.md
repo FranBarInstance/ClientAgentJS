@@ -14,6 +14,14 @@ ClientAgentJS uses a **Zero-Backend Architecture**. Unlike traditional AI applic
 - **Rapid Prototyping**: Validate AI-powered ideas in minutes without setting up any server-side environment.
 - **Multi-Provider Apps**: Allow users to choose between OpenAI, Anthropic, or local models (via Ollama) within the same interface.
 
+### Live Examples
+
+Try the interactive examples online:
+
+- [Chat Explorer](https://franbarinstance.github.io/ClientAgentJS/examples/browser-basic/) - Full-featured chat interface
+- [Form Assistance](https://franbarinstance.github.io/ClientAgentJS/examples/form-assistance/) - AI-powered form helpers
+- [MCP Tools](https://franbarinstance.github.io/ClientAgentJS/examples/mcp-tools/) - Model Context Protocol integration
+
 ## Key Features
 
 - **Zero-Backend**: No proxy servers, no hidden costs. Your browser talks directly to the AI provider.
