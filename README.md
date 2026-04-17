@@ -84,12 +84,14 @@ npm test
 
 ### Installation
 
-```bash
-npm install clientagentjs
+Since the project is not yet published on npm, use the pre-built files from the `dist/` folder:
+
+**ESM (recommended for modern projects):**
+```javascript
+import { createAgent } from './dist/clientagentjs.esm.js';
 ```
 
-Or use it directly in the browser via a `<script>` tag:
-
+**Global script (for classic web environments):**
 ```html
 <script src="dist/clientagentjs.global.js"></script>
 <script>
@@ -103,7 +105,7 @@ Or use it directly in the browser via a `<script>` tag:
 ### Basic Usage
 
 ```javascript
-import { createAgent } from 'clientagentjs';
+import { createAgent } from './dist/clientagentjs.esm.js';
 
 const agent = createAgent();
 
