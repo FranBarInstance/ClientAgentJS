@@ -51,4 +51,4 @@ If you are not using Ollama, open the profile panel and create an active OpenAI-
 
 ---
 
-See license: https://github.com/FranBarInstance/ClientAgentJS
+See license: [ClientAgentJS](https://github.com/FranBarInstance/ClientAgentJS)

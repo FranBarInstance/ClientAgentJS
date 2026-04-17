@@ -203,4 +203,4 @@ Main classes available for customization:
 
 ---
 
-See license: https://github.com/FranBarInstance/ClientAgentJS
+See license: [ClientAgentJS](https://github.com/FranBarInstance/ClientAgentJS)

@@ -264,4 +264,4 @@ This architecture makes the project ideal for internal tools, developer-focused 
 
 ## License
 
-See license: https://github.com/FranBarInstance/ClientAgentJS
+See license: [ClientAgentJS](https://github.com/FranBarInstance/ClientAgentJS)

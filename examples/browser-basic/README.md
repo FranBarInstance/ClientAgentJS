@@ -47,4 +47,4 @@ This example is a comprehensive "Chat Explorer" that demonstrates the majority o
 
 ---
 
-See license: https://github.com/FranBarInstance/ClientAgentJS
+See license: [ClientAgentJS](https://github.com/FranBarInstance/ClientAgentJS)
